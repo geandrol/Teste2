@@ -21,7 +21,8 @@ public class UserDetailsImpl implements UserDetails {
 		this.password = user.getSenha();
 	}
 
-	public UserDetailsImpl() {	}
+	public UserDetailsImpl() {
+	}
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -60,5 +61,5 @@ public class UserDetailsImpl implements UserDetails {
 	public boolean isEnabled() {
 		return true;
 	}
-	
+
 }

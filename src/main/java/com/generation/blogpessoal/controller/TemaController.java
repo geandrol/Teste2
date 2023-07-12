@@ -23,14 +23,12 @@ import com.generation.blogpessoal.repository.TemaRepository;
 
 import jakarta.validation.Valid;
 
-
 @RestController
 @RequestMapping("/temas")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class TemaController {
 	
-
-    @Autowired
+	@Autowired
     private TemaRepository temaRepository;
     
     @GetMapping
@@ -76,5 +74,5 @@ public class TemaController {
         
         temaRepository.deleteById(id);              
     }
-   
+	   
 }
